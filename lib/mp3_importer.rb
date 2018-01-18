@@ -9,12 +9,12 @@ class MP3Importer
   end
 
   def files
-    @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
+    @files ||= Dir.glob('./db/mp3s').collect{ |f| f.gsub("#{path}/", "") }
   end
 
   def import
     binding.pry
-    files.collect{ |file| Song.new_by_filename(file) }
+    files.collect { |file| Song.new_by_filename(file) }
   end
 
 
