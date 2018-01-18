@@ -19,18 +19,5 @@ class Song
     song.save
   end
 
-  def self.find_by_artist(artist)
-    Song.all.select do | song |
-      song.artist == artist
-    end
-  end
-
-  def self.all?
-    @@all
-  end
-
-  def save
-    @@all << self
-  end
 
 end
