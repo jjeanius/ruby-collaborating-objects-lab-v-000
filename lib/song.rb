@@ -17,3 +17,4 @@ class Song
     song.artist.name = artist
     song.save
   end
+end
