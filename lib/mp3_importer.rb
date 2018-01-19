@@ -13,7 +13,6 @@ class MP3Importer
     #Dir.chdir(@path) do | path |
         #Dir.glob("*.mp3")
     end
-  end
 
   def self.all
     @@all
@@ -22,6 +21,6 @@ class MP3Importer
   def import
     files.each{|file| Song.new_by_filename(name)}
 #binding.pry
+    end
   end
-end
 end
