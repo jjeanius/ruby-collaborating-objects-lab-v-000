@@ -24,6 +24,3 @@ class MP3Importer
 #binding.pry
     end
   end
-end
-end
-end
