@@ -20,7 +20,7 @@ class MP3Importer
   end
 
   def import
-@@all.find{ |file| Song.new_by_filename(file) } 
+@@all.find{ |file| Song.new_by_filename(file) }
 #binding.pry
   end
 
