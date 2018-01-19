@@ -20,13 +20,9 @@ class MP3Importer
   end
 
   def import
-
-  if files.map{ |file| Song.new_by_filename(file) } !=0
-    false
-  else
-true
-end
+files.collect{ |file| Song.new_by_filename(file) } !=0
 #binding.pry
   end
+
 
 end
