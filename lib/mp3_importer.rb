@@ -17,7 +17,7 @@ class MP3Importer
 
   def import
     #binding.pry
-    if files.collect !{ |file| Song.new_by_filename(file) }
+    if files.collect{ |file| Song.new_by_filename(file) }
       true
     else
       false
