@@ -13,6 +13,7 @@ class MP3Importer
     #Dir.chdir(@path) do | path |
         #Dir.glob("*.mp3")
     end
+  end
 
   def self.all
     @@all
