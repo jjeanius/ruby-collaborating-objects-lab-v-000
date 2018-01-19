@@ -24,6 +24,6 @@ class MP3Importer
 files.each{|file| Song.new_by_filename(name)}
 #binding.pry
   end
-
+end
 end
 end
