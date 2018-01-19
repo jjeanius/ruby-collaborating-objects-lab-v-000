@@ -20,7 +20,8 @@ class MP3Importer
   end
 
   def import
-files.each{|file| Song.new_by_filename(name)}
+    files.each{|file| Song.new_by_filename(name)}
 #binding.pry
   end
+end
 end
