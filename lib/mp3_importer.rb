@@ -15,13 +15,13 @@ class MP3Importer
     end
   end
 
-  def self.all? 
-    @@all? 
+  def self.all?
+    @@all?
   end
-  
+
   def import
-  
-    
+
+
     @@all.collect{ |file| Song.new_by_filename(file) }
 binding.pry
   end
