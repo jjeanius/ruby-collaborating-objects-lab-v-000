@@ -21,7 +21,7 @@ class MP3Importer
 
   def import
 
-  if files.map{ |file| Song.new_by_filename(file) } ==0
+  if files.map{ |file| Song.new_by_filename(file) } !=0
     false
   else
 true
