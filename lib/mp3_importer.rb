@@ -17,11 +17,11 @@ class MP3Importer
 
   def import
     #binding.pry
-    if @path! == pfiles.collect{ |file| Song.new_by_filename(file) }
+    if @path!= pfiles.collect{ |file| Song.new_by_filename(file) }
       false
     else
       true
-    
+
 
   end
 
